@@ -1,7 +1,7 @@
 .one{
-border-style:groove;
-border-color:coral;
-border-width:thin;
+border-style:inset;
+border-color:white;
+border-width:thick;
 padding:20px;
 border-radius:20px;
 }
