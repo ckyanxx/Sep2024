@@ -1,0 +1,50 @@
+body{
+margin-left:80px;
+margin-right:80px;
+margin-top:30px;
+background-image:linear-gradient(to bottom right,#CCFFE5,#CCFFCC,#E5FFCC,#FFFFCC,#FFE5CC,#FFCCCC);
+text-align:justify;
+background-size: cover;
+}
+
+h1{
+background-image:url(crescendo.png);
+background-clip:text;
+background-size:5%;
+color:transparent; 
+background-color:white;
+font-family:georgia;
+font-size:95px;
+letter-spacing:6px;
+filter:drop-shadow(-5px 5px 5px #000000);
+}
+
+.mix{
+border-style: dashed none dashed none;
+border-width:thick;
+padding-top:20px;
+padding-bottom:20px;
+}
+
+p{
+font-family:Courier New;
+font-weight:bold;
+line-height: 1.5;
+font-size:25px;
+}
+
+img{
+float:left;
+height:150px;
+width:150px;
+transition: width 2s,height 2s;
+margin-right:35px;
+margin-top:40px;
+margin-left:35px;
+filter: drop-shadow(15px 15px 15px #555)
+}
+
+img:hover{
+width:165px;
+height:165px;
+}
