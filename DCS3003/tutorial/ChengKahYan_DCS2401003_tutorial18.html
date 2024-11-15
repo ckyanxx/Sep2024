@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Form - Text Input </title>
+<link rel=icon href=crescendo.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial scale=1.0>
+
+
+</head>
+
+
+<body>
+<center>
+<form>
+
+<table border=2 cellspacing=5px height=60% width=65% style="padding:5px 15px 5px 15px;background-color:powderblue;border-width:3px;">
+
+<tr>
+<td align=center style="font-size:20px;border:none;">
+<b>Room Reservation</b>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<table width=85% height=100% style="margin:5px 10px 5px 10px;line-height:60%;">
+<tr>
+<td align=left colspan=4 style="color:blue;font-weight:bold;"><u>
+Personal details</u><font color=red>*</font></td>
+</tr>
+
+<tr>
+<td align=left>Full Name:</td>
+<td rowspan=2><input type=text name=fname><br>
+<input type=email name=email>
+</td>
+<td align=left>IC No. :</td>
+<td rowspan=2><input type=text name=ICNO><br>
+<input type=text name=number>
+</td>
+</tr>
+
+<tr>
+<td align=left>Email address</td>
+<td align=left>Contact No. :</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<table width=85% height=100% style="margin:5px 10px 5px 10px;">
+<tr>
+<td colspan=4 align=left style="color:blue;font-weight:bold;">
+<u>Reservations</u><font color=red>*</font></td>
+</tr>
+
+<tr>
+<td align=left>Number of Room(s):</td>
+<td>
+<select>
+<option value="0" Selected>-Selection-</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+<td align=left>Payment Method</td>
+<td align=left>
+<input type=radio name=Cash>Cash
+<input type=radio name=TNG>TNG
+</td>
+</tr>
+
+<tr>
+<td align=left>Number of Adult(s):</td>
+<td>
+<select>
+<option value="0" Selected>-Selection-</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</td>
+<td rowspan=5 align=left>
+Do you have any special requests?</td>
+<td rowspan=5  align=left>
+<textarea row=10 cols=10 name=resquests>
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td align=left>Number of Children :</td>
+<td>
+<select>
+<option value="0" Selected>-Selection-</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td align=left>Check-in Date :</td>
+<td>
+<input type=date name=checkin>
+</td>
+</tr>
+
+<tr>
+<td align=left>Check-out date :</td>
+<td>
+<input type=date name=checkout>
+</td>
+</tr>
+
+<tr>
+<td align=left>Room Preference :</td>
+<td>
+<input type=checkbox name=deluxe>Deluxe
+<input type=checkbox name=suite>Suite
+</td>
+<tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td align=center style="border:none;">
+<input type=submit value=Submit>
+<input type=reset >
+</td>
+</tr>
+</table>
+</form>
+
+
+</body>
+</html>
