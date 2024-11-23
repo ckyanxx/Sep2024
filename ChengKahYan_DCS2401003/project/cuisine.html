@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name=" Viewport" content="width=device-width" initial scale="1.0" />
+    <link rel="icon" href="head.jpg" type="image/jpg" />
+    <title>Kyrono Trip &#128747</title>
+
+    <!--main css-->
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="destination.css">
+    <link rel="stylesheet" href="scenicspot.css">
+    <link rel="stylesheet" href="cuisine.css">
+    <link rel="stylesheet" href="culture.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<!--navigation-->
+    <div id="bar">
+        <a href="logo.png"><img id="logo" src="logo.png" alt="Kyrono Trip"/></a>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <div class="nav-links">
+        <a href="project.html">Home</a>
+        <div class="dropdown">
+            <a href="main.html">Destination</a>
+            <div class="dropdownContent">
+                <a href="main.html#spring" class="mouseover">Spring</a>
+                <a href="main.html#summer" class="mouseover">Summer</a>
+                <a href="main.html#autumn" class="mouseover">Autumn</a>
+                <a href="main.html#winter" class="mouseover">Winter</a>
+            </div>
+            </div>
+        <a href="scenicspot.html">Scenic Spot</a>
+        <a href="cuisine.html" class="active">Cuisine</a>
+        <a href="culture.html">Cultures</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="user.html">User</a>
+    </div>
+    </div>
+
+
+    <!--heading-->
+    <div class="cuisinebg">
+        <h1>A World of Flavors</h1>
+    </div>
+    <!--heading end-->
+
+    <!--section two-->
+
+    <div class="shadows-into-light-regular" style="font-size: 70px;padding:20px  0 20px 0;text-align: center;font-weight: 600;">
+        Local Cuisine
+    </div>
+        <div id="cuisineframe">
+            <div id="cuisineframe">
+                <div id="cuisinesec">
+                    <img src="cuisinefood1.jpg" alt="Jodd Fair">
+                    <a href="#cuisine1" class="cuisinelink"><p class="cuisine">Eat Now !</p></a>
+                </div>
+                <div id="cuisinesec">
+                    <img src="cuisinefood2.jpg" alt="Tsukiji Outer Market">
+                    <a href="#cuisine2" class="cuisinelink"><p class="cuisine">Eat Now !</p></a>
+                </div>
+                <div id="cuisinesec">
+                    <img src="cuisinefood3.jpg" alt="Ben Thanh Market">
+                    <a href="#cuisine3" class="cuisinelink"><p class="cuisine"> Eat Now !</p></a>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="containerbg">
+        <div class="container">
+            <!-- First Row -->
+            <a id="cuisine1"></a>
+            <div class="row">
+            <div class="text">
+                <h2 class="shadows-into-light-regular" style="color:black;font-weight:500;filter:drop-shadow(1px 1px 1px black);">Jodd Fair</h2>
+                <h3>Local Food:</h3>
+                <p>
+                Pad Thai, Mango Sticky Rice, and Tom Yum Soup.
+                </p>
+                <img src="cuisine1.jpg" alt="jodd fair">
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124011.87056772865!2d100.48452095827459!3d13.756489213699039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x30e29fb274407d93%3A0x2aba451897c0b5f!2zUmFtYSBJWCBSZCwgSHVhaSBLaHdhbmcsIEJhbmdrb2sgMTAzMTDms7Dlm70!3m2!1d13.7565029!2d100.5669228!5e0!3m2!1szh-CN!2smy!4v1732343383846!5m2!1szh-CN!2smy" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        
+            <!-- Second Row -->
+            <a id="cuisine2"></a>
+            <div class="row" >
+            <div class="text">
+                <h2 class="shadows-into-light-regular" style="color:black;font-weight:500;filter:drop-shadow(1px 1px 1px black);">Tsukiji Outer Market</h2>
+                <h3>Local Food:</h3>
+                <p>
+                Sushi, Takoyaki, and Matcha Desserts
+                </p>
+                <img src="cuisine2.jpg" alt="Tsukiji Outer Market">
+            </div>
+            <div class="google-map">
+                <!-- Embed Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d51863.85525127294!2d139.72901980835343!3d35.664911483375846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x60188b21cd0b675b%3A0xa26e24a1bf97025c!2zVHN1a2lqaSBPdXRlciBNYXJrZXQsIDQgQ2hvbWUtMTMg562R5Zyw5Lit5aSu5Yy65Lic5Lqs6YO95pel5pys!3m2!1d35.6649185!2d139.7702195!5e0!3m2!1szh-CN!2smy!4v1732344455390!5m2!1szh-CN!2smy" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            </div>
+
+            <!--third section-->
+            <a id="cuisine3"></a>
+            <div class="row">
+            <div class="text">
+                <h2 class="shadows-into-light-regular" style="color:black;font-weight:500;filter:drop-shadow(1px 1px 1px black);">Ben Thanh Market</h2>
+                <h3>Local Food:</h3>
+                <p>
+                Pho, Banh Mi, and Fresh Spring Rolls
+                </p>
+                <img src="cuisine3.jpg" alt="Ben Thanh Market">
+            </div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d62712.093835114516!2d106.6568209040312!3d10.772514080114643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x31752f3f3129e64d%3A0x8d6b2d79522c7f30!2zQmVuIFRoYW5oIE1hcmtldCwgQuG6v24gVGjDoG5oLCDnrKzkuIDljLrog6Hlv5fmmI7ljLrotorljZc!3m2!1d10.7725168!2d106.6980208!5e0!3m2!1szh-CN!2smy!4v1732344653411!5m2!1szh-CN!2smy" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Form-->
+    <div class="formbg">
+        <div class="formalignment">
+            <h2 class="permanent-marker-regular">Fill out the form !</h2>
+            <p class="shadows-into-light-regular">to explore new destinations and get travel inspiration!</p>
+        </div>
+        <div class="formalignment">    
+            <form class="menu">
+                <input type="text" id="name" name="name" placeholder="Full Name"><br>
+                <input type="text" id="email" name="email" placeholder="Kyronotrip@gmail.com"><br>
+                <input type="submit" value="Subcribe">
+            </form>
+        </div>
+    </div>
+
+
+<!--footer: about us-->
+
+<footer>
+    <div class="alignment">
+        <h4>About Us</h4>
+        <ul class="footer">
+            <li>Contact Us At:</li>
+            <br>
+            <li><!--记得写内容！！！!!!!!!!!!!!!！-->
+            <a href="#home"><img class="footercontact" src="twitter.png" alt="Twitter"></a>
+            <img class="footercontact" src="facebook.png" alt="FaceBook">
+            <img class="footercontact" src="instagram.png" alt="Instagram">
+            <img class="footercontact" src="whatsapp.png" alt="Whatsapp">
+            </li>
+            <li id="footerhover"><a href="mailto:chengkahyan05@gmail.com" style="text-decoration: none;">Kyronotrip@gmail.com</a></li>
+            <li>07-2401 003</li>
+            
+        </ul>
+    </div>
+    <div class="alignment">
+        <h4>Business Hour</h4>
+        <ul class="footer">
+            <li>Monday 9:00 - 24:00</li>
+            <li>Tuesday 9:00 - 24:00</li>
+            <li>Wednesday 9:00 - 24:00</li>
+            <li>Thursday 9:00 - 24:00</li>
+            <li>Friday 9:00 - 24:00</li>
+            <li>Saturday 10:00 - 22:00</li>
+            <li>Sunday 11:00 - 22:00</li>
+    </div>
+    <div class="imgalignment">
+        <h4>Collection</h4>
+            <img class="ins" src="insa.jpg" alt="Kyrono at Colosseum">
+            <img class="ins" src="insb.jpg" alt="Kyrono at Australia ">
+            <img class="ins" src="insc.jpg" alt="Kyrono at TreeHouse">
+    </div>
+
+    <div class="alignment">
+        <img class="footerlogo" src="logo.png" alt="Kyrono Trip">
+        <p style="padding-top:20px;">	&copy;Kyrono Trip, 2020 </p>
+    </div>
+</footer>
+
+
+    <!--JavaScript-->
+    <script src="mainjava.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+
+</body>
+</html>
