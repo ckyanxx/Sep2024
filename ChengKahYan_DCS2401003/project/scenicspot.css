@@ -1,0 +1,233 @@
+.scenicbg {
+    background-image: url('scenicbg.gif');
+    width: 100%;
+    height: 780px;
+    max-height:100%;
+    padding-top: 120px;
+    background-size: cover;
+    background-position: center;
+    background-color:antiquewhite;/*avoid image error*/
+}
+
+.scenicbg h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    margin-top:180px;
+}
+
+/*box*/
+.box{
+    text-align: center;
+    margin:40px 30px 40px 30px;
+    box-shadow:0 -80px 120px 120px aliceblue;/*box-shadow: h-shadow v-shadow blur spread color inset;*/
+}
+img.earth{
+    width:100%;
+    max-width: 750px;
+    max-height:100%;
+    height:750px;
+    animation-name: earthanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes earthanimation{
+    0% {opacity:100%;}
+    10%{opacity: 90%;}
+    15%{opacity:85%;}
+    25%{opacity:75%;}
+    35%{opacity: 60%;}
+    50%{opacity:50%;}
+    65%{opacity: 35%;}
+    70%{opacity: 25%;}
+    75%{opacity: 18;}
+    88%{opacity: 10%;}
+    100%{opacity:6%;}
+}
+
+.box.earthcontainer{
+    position:relative;
+}
+.scenerytext{
+    position:relative;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -200%); 
+    text-align: center;
+}
+.scenerytext p{
+    color:white ;
+    font-size: 40px;
+    font-weight:380px;
+    line-height: 150%;
+    text-decoration: none !important;
+    filter:drop-shadow(0 2px 2px black);
+}
+a.scenerylink:link {
+    text-decoration: none; 
+    color:white;
+}
+a.scenerylink:visited { 
+    text-decoration: none; 
+    color:rgb(248, 127, 248);
+} 
+
+a.scenerylink:hover { 
+    text-decoration: none; 
+    letter-spacing:2px;
+    filter:drop-shadow(0 5px 5px pink);
+  } 
+a.scenerylink:active { 
+    text-decoration: none; 
+    letter-spacing:4px;
+    color:lightcoral;
+    filter:drop-shadow(0 5px 5px pink);
+}
+
+/*main*/
+.maincontainer{
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    gap:20px;
+    padding:30px;
+}
+
+/*left*/
+.left{
+    flex:2;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.left.container{
+    flex:2;
+    padding:5px;
+    margin:5px;
+}
+
+.left img{
+    width:100%;
+    max-width:420px;
+    max-height:100%;
+    height:350px;
+    margin:30px 20px 30px 20px;
+    float:both;
+    animation:scenery;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+img.imgborder{
+    box-shadow:0 0 15px 15px rgba(147, 121, 221,0.4);
+    transition-duration:0.8s;
+}
+img.imgborder:hover{
+    box-shadow:0 0 18px 18px rgba(147, 121, 221,0.7);
+}
+@keyframes scenery{
+    from{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0%);
+        opacity:1;
+    }
+    
+}
+@keyframes scenerytext{
+    from{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0%);
+        opacity:1;
+    }
+    
+}
+@keyframes scenerytitle{
+    from{
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    to{
+        transform:translateX(0%);
+        opacity:1;
+    }
+    
+}
+
+
+
+
+
+/*right*/
+.right{
+    flex:1;
+    padding:20px;
+    background-color: rgba(242,250,253,0.5);
+    box-shadow:-3px 0 8px rgba(34, 34, 34, 0.5);
+}
+.right img{
+    width:100%;
+    max-width:300px;
+    height:480px;
+    max-height:100%;
+    margin: 25px 25px 25px 25px;
+}
+
+
+/*font*/
+.right h2{
+    filter:drop-shadow(2px 1px 2px pink);
+    padding:10px;
+    font-size:60px;
+    animation: fadeIn 5s;
+}
+.left h2{
+    filter:drop-shadow(2px 2px 2px rgb(146, 137, 138));
+    padding:10px;
+    font-size:80px;
+    animation: fadeIn 5s;
+    animation:scenerytitle;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+.maincontainer h4{
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.maincontainer p{
+    font-size: 24px;
+    padding:10px 45px 10px 45px;
+    text-align:justify;
+    line-height: 125%;
+    animation:scenerytext;
+    animation-iteration-count: 1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+@media (max-width: 768px) {
+    .scenicbg h4{
+        font-size: 70px;
+        align-items: center;
+    }
+    img.earth{
+        width:100%;
+        max-width: 450px;
+        max-height:100%;
+        height:450px;
+    }
+    .scenerytext{
+        position:relative;
+        transform: translate(-50%, -150%); 
+        text-align: center;
+    }
+}

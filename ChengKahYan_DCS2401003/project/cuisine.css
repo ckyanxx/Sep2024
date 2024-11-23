@@ -1,0 +1,192 @@
+.cuisinebg {
+  background-image: url('cuisinebg.jpg'); 
+  width: 100%;
+  height: 680px;
+  max-height: 100%;
+  padding-top: 70px;
+  background-size: cover;
+  background-position: center;
+  background-color: antiquewhite; /* Avoid image error */
+  position: relative; /* Needed for child element positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading Section */
+.cuisinebg h1 {
+  font-size: 128px;
+  color: rgba(255, 255, 255, 0.8); 
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5); 
+  margin: 0;
+  position: relative; 
+  z-index: 1;
+}
+
+/* Blur Effect on Background */
+.cuisinebg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Inherit the same background image */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Apply the blur effect */
+  -webkit-filter: blur(8px); /* Safari support */
+  z-index: 0;
+  overflow:hidden; 
+}
+
+
+
+/*second section*/
+#cuisineframe{
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  display:flex;
+  justify-content:center;
+}
+#cuisinesec {
+  flex: 1;
+  padding:45px 15px 45px 15px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+p.cuisine{
+  flex: 1;
+  padding: 10px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 28px;
+  font-weight: 280;
+  background:rgba(244, 240, 245,0.7);
+  background-size:80% 80%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+a.cuisinelink:link {
+  text-decoration: none; 
+  color:black;
+}
+a.cuisinelink:visited { 
+  text-decoration: none; 
+  color:black;
+} 
+
+a.cuisinelink:hover { 
+  font-weight: bold;
+  size:101%;
+  background:rgba(244, 240, 245,1.0);
+  letter-spacing:5px;
+  filter:drop-shadow(0 5px 5px pink);
+} 
+
+
+
+#cuisinesec img{
+  width:375px;
+  height:375px;
+  border-radius: 20px;
+  margin: 15px 20px 15px 20px;
+  justify-content: center;
+}
+
+/*third section*/
+.containerbg{
+  background-image: url('cuisinecontainer.jpg');
+  width: 100%;
+  height: 100%;
+  max-width:100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding:20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 20px 0 20px 0;
+  border-radius: 7px;
+  background-color: rgba(249, 198, 206,0.3);
+}
+
+.row:hover{
+  box-shadow: 1px 1px 2px 2px rgba(255, 255, 255, 0.8);
+  background-color: rgba(249, 198, 206,0.9);
+}
+
+.text {
+  flex: 1;
+  max-width: 50%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
+}
+
+.container img{
+  width:60%;
+  height:60%;
+  margin:10px 0 10px 0;
+}
+
+/* Right Map Column */
+.google-map {
+  flex: 1; 
+  min-width: 300px; 
+  max-width: 50%; 
+  position: relative; 
+  padding-bottom: 50%; 
+
+}
+
+/* Map Iframe */
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; 
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .text, .google-map {
+    max-width: 100%; 
+  }
+  .cuisinebg h1{
+    font-size:90px;
+    align-items: center;
+  }
+  #cuisineframe{
+    flex-direction: column; /* Stacks columns vertically on small screens */
+    align-items:center;
+  }
+}

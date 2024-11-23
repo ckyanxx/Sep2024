@@ -1,0 +1,264 @@
+.seasonbg {
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.seasonsec{
+    flex:1;
+    max-width:25%;
+    height: 650px;
+    max-height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.seasonbg img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity: 0.6;
+}
+
+.seasonbg h2{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    filter:drop-shadow(1px 1px 1px #000000);
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+
+}
+#seasontitle{
+    font-size:100px;
+    padding:50px 0 50px 0;
+    text-align: center;
+}
+
+/*link*/
+a.seasonlink:link {
+    text-decoration: none; 
+    color:white;
+}
+a.seasonlink:visited { 
+    text-decoration: none; 
+    color:white;
+} 
+
+a.seasonlink:hover { 
+    text-decoration: none; 
+    letter-spacing:5px;
+    filter:drop-shadow(0 5px 5px pink);
+  } 
+a.seasonlink:active { 
+    text-decoration: none; 
+    letter-spacing:6px;
+    color:lightcoral;
+    filter:drop-shadow(0 5px 5px pink);
+}
+
+hr.season{
+    width:45%;
+    height:3px;
+    background-color:darkgray;
+    margin-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*section two*/
+img.season{
+    width:415px;
+    height:313px;
+    border-radius: 20px;
+    margin: 15px 15px 15px 15px;
+}
+
+p.season{
+    flex: 1;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 280;
+    margin: 15px 20px 15px 20px;
+    background:rgba(244, 240, 245,0.9);
+    background-size:100% 100%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/*spring*/
+#springframe{
+    background-image: url('springbg.jpg');
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: space-around;
+}
+
+#springsec {
+    flex: 1 1 30%;
+    margin:45px 15px 45px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*summer*/
+#summerframe{
+    background-image: url('summer.jpg');
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: space-around;
+}
+
+#summersec {
+    flex: 1;
+    margin:45px 15px 45px 15px;
+}
+
+/*autumn*/
+#autumnframe{
+    background-image: url('autumnbg.jpg');
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: space-around;
+}
+
+#autumnsec {
+    flex: 1;
+    margin:45px 15px 45px 15px;
+}
+
+
+/*winter*/
+#winterframe{
+    background-image: url('winter.jpg');
+    width: 100%;
+    height: 100%;
+    max-width:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: space-around;
+}
+
+#wintersec {
+    flex: 1;
+    margin:45px 15px 45px 15px;
+}
+
+/*third section*/
+.tips {
+    text-align: center;
+    margin:40px 5px 40px 2px;
+    background-color: rgb(242,250,240);
+    box-shadow:0 -80px 110px 110px rgb(242,250,240);/*box-shadow: h-shadow v-shadow blur spread color inset;*/
+}
+.tipscontainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center; 
+}
+
+.tipsalign {
+    flex: 1;
+    margin: 20px  30px ;
+}
+
+.tips img {
+    width: 430px;
+    height: 308px;
+    border-radius: 20px;
+    margin: 15px 20px;
+}
+
+.tips h2{
+    font-size:26px;
+    font-weight: 500 ;
+    letter-spacing:3px;
+    margin: 0 0 12px 0;
+    text-align: center;
+    color:black;
+    filter:drop-shadow(1px 1px 2px grey);
+}
+
+.tipsalign h3{
+    font-size:26px;
+    font-weight: 500 ;
+    letter-spacing:3px;
+    text-align: left;
+    color:black;
+    filter:drop-shadow(1px 1px 2px grey);
+}
+
+.tipsalign p{
+    font-size:18px;
+    font-weight: 500 ;
+    letter-spacing:2px;
+    margin: 0 0 12px 0;
+    text-align: left;
+    color:black;
+    line-height: 120%;
+}
+
+.tiplink :hover{
+    size:102%;
+    border-radius: 25px;
+    margin: 10px 15px 10px 15px;
+    box-shadow: 0 2px 2px 2px rgba(255,255,255,0.3);
+}
+
+
+@media (max-width: 768px) {
+    .seasonbg h2{
+        font-size:28px;
+        z-index:1000;
+    }
+    
+    .seasonbg{
+        width:100%;
+        max-height:100%;
+        height:auto;
+    }
+    #seasontitle{
+        font-size:50px;
+        align-items: center;
+
+    }
+    .seasonsec {
+        flex: 1 1 100%; 
+        height: auto; 
+        width:100%;
+        background-attachment: scroll; 
+    }
+
+    .seasonbg img {
+        width: 100%;
+        height: auto; 
+    }
+
+}
