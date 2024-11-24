@@ -476,6 +476,7 @@ img.ins{
         z-index: 1000;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 10px 10px;
+        align-items: center;
     }
     
     .nav-links.active {
@@ -489,6 +490,7 @@ img.ins{
     }
     .dropdownContent{
         background-color:rgba(251, 187, 197, 0.7);
+        align-items: center;
     }
     .mouseover:hover{
         background-color:rgba(251, 187, 197, 1.0);
