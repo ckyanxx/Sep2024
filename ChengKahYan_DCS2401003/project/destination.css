@@ -236,7 +236,7 @@ p.season{
 @media (max-width: 768px) {
     .seasonbg h2{
         font-size:28px;
-        z-index:1000;
+        z-index:999;
     }
     
     .seasonbg{
