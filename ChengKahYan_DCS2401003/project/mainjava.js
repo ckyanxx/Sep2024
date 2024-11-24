@@ -22,8 +22,14 @@ function scrollFunction() {
 function toggleMenu() {
     const navLinks = document.querySelector(".nav-links");
     navLinks.classList.toggle("active");
-}
 
+    if (navLinks.classList.contains('active')) {
+        bar.style.zIndex = '1000'; // Bring navbar on top when active
+    } else {
+        bar.style.zIndex = '10';
+    }
+
+}
 //image slide show
 var counter = 1;
 setInterval(function(){
